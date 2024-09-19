@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>File Manager</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class='contextmenu contextmenu-files'>
+  <ul>
+    <li>
+      <button id='btn-modal-copy'>
+        <ion-icon name='copy'></ion-icon>
+        Copy
+      </button>
+    </li>
+    <li>
+      <button id='btn-modal-cut'>
+        <ion-icon name='cut'></ion-icon>
+        Cut
+      </button>
+    </li>
+    <li>
+      <button id='btn-modal-del'>
+        <ion-icon name='trash'></ion-icon>
+        Delete
+      </button>
+    </li>
+    <li>
+      <button id='btn-modal-rename'>
+        <ion-icon name='create'></ion-icon>
+        Rename
+      </button>
+    </li>
+  </ul>
+</div>
+<div class='contextmenu contextmenu-dir'>
+  <ul>
+    <li>
+      <button id='btn-modal-mkdir'>
+        <ion-icon name='folder'></ion-icon>
+        New folder
+      </button>
+    </li>
+    <li>
+      <button id='btn-modal-mkfile'>
+        <ion-icon name='document'></ion-icon>
+        New file
+      </button>
+    </li>
+    <li>
+      <button disabled id='btn-modal-paste'>
+        <ion-icon name='create'></ion-icon>
+        Paste
+      </button>
+    </li>
+  </ul>
+</div>
+<div class='window'>
+  <div class='path'>
+    <input id='path-input' type='text'>
+    <button id='path-btn'>
+      <ion-icon name='play'></ion-icon>
+    </button>
+  </div>
+  <div class='controls'>
+    <button class='controls__btn' id='btn-home'>
+      <ion-icon name='home'></ion-icon>
+    </button>
+    <button class='controls__btn' id='btn-up'>
+      <ion-icon name='arrow-round-back'></ion-icon>
+    </button>
+    <button class='controls__btn' id='btn-newdir'>
+      <ion-icon name='folder'></ion-icon>
+    </button>
+    <button class='controls__btn' id='btn-newfile'>
+      <ion-icon name='document'></ion-icon>
+    </button>
+    <button class='controls__btn' disabled id='btn-del'>
+      <ion-icon name='trash'></ion-icon>
+    </button>
+    <button class='controls__btn' disabled id='btn-rename'>
+      <ion-icon name='create'></ion-icon>
+    </button>
+    <button class='controls__btn' disabled id='btn-copy'>
+      <ion-icon name='copy'></ion-icon>
+    </button>
+    <button class='controls__btn' disabled id='btn-cut'>
+      <ion-icon name='cut'></ion-icon>
+    </button>
+    <button class='controls__btn' disabled id='btn-paste'>
+      <ion-icon name='clipboard'></ion-icon>
+    </button>
+  </div>
+  <div class='explorer'></div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+<script src='https://unpkg.com/ionicons@4.5.5/dist/ionicons.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1701" height="1920">
+  <style>
+    .layer2 { fill: rgb(80, 124, 227); }
+    .layer1 { fill: #010164; }
+  </style>
+    
+<rect class="layer1" style="x: 100;width: 1020;height: 1919;rx: 160;" rx="160"></rect>
+
+<rect class="layer1" x="120" width="100" height="100" rx="5" style="
+    height: 850;
+    width: 350;
+    x: 1316;
+    transform-origin: center;
+    transform: rotate(-45deg);
+    y: 355;
+"></rect>
+
+<rect class="layer1" x="120" width="100" height="100" rx="5" style="
+    x: 900;
+    y: 469;
+    height: 1450;
+    width: 700;
+    rx: 160;
+"></rect>
+
+<rect class="layer1" style="
+    width: 500;
+    height: 200;
+    x: 1100;
+    y: 550;
+    rx: 11;
+"></rect>
+
+<rect class="layer1" style="
+    width: 500;
+    height: 200;
+    x: 800;
+    y: 1719;
+    rx: 11;
+"></rect>
+
+<rect class="layer2" style="
+    height: 100;
+    width: 100;
+    x: 917;
+    y: 44.8;
+"></rect>
+
+<rect class="layer2" style="x: 147;: 0;8;y: 45;width: 950px;height: 1829px;rx: 119;" rx="10"></rect>
+
+<rect class="layer2" style="
+    height: 100;
+    width: 100;
+    x: 1455.1;
+    y: 580;
+"></rect>
+
+<rect  class="layer2" x="120" width="100" height="100" rx="5" style="
+    x: 855;
+    y: 524;
+    height: 1350;
+    width: 700;
+    rx: 117;
+    /* display: none; */
+"></rect>
+
+<path class="layer1" d="M 17 33 
+       L 566 585 
+       L 240 585 
+       A 225 225 0 0 1 16 350 
+       Z"
+       style="
+    transform: translateX(1000px);
+    /* display: none; */
+"></path>
+
+<path d="M 61 78 
+       L 523 542 
+       L 230 540 
+       A 180 180 0 0 1 62 370 
+       Z" fill="white" style="
+    transform: translateX(1000px);
+    /* display: none; */
+"></path>
+
+<rect class="layer1" x="120" width="100" height="100" rx="5" style="
+    width: 100%;
+    height: 462px;
+    x: 0;
+    rx: 100;
+    y: 1294;
+"></rect>
+
+<rect x="120" width="100" height="100" rx="5" style="
+    width: 1610px;
+    height: 375px;
+    x: 46;
+    rx: 53;
+    y: 1338;
+    fill: white;
+    /* display: none; */
+"></rect>
+
+<rect class="layer1" style="
+    height: 45px;
+    width: 300px;
+    x: 330;
+    y: 200;
+    rx: 23;
+"></rect>
+
+<rect class="layer1" style="
+    height: 45px;
+    width: 500px;
+    x: 330;
+    y: 385;
+    rx: 23;
+"></rect>
+
+<rect class="layer1" style="
+    height: 45px;
+    width: 620px;
+    x: 330;
+    y: 570;
+    rx: 23;
+"></rect>
+
+<rect class="layer1" style="
+    height: 45px;
+    width: 400px;
+    x: 330;
+    y: 755;
+    rx: 23;
+"></rect>
+
+<rect class="layer1" style="
+    height: 45px;
+    width: 620px;
+    x: 330;
+    y: 940;
+    rx: 23;
+"></rect>
+
+<rect class="layer1" style="
+    height: 45px;
+    width: 820px;
+    x: 330;
+    y: 1125;
+    rx: 23;
+"></rect>
+
+<g xmlns="http://www.w3.org/2000/svg" style="transform: translate(550px, 1610px);">
+		<text xml:space="preserve" style="font-size: 300;">
+		  <tspan x="-10.28" y="19.39" style="font-family: cursive;fill: rgb(255,0,0);font-weight: bolder;">CSS</tspan>
+      <animateTransform attributeName="transform" type="translate" values="0,0;500,0;-500,0;0,0" keyTimes="0;0.33;0.66;1" dur="4s" repeatCount="indefinite"></animateTransform>
+	  </text>
+</g>
+
+<g xmlns="http://www.w3.org/2000/svg" style="transform: translate(245px, 1823px);">
+  <text xml:space="preserve" style="font-size: 100;">
+    <tspan x="-10.28" y="19.39" style="font-family: cursive; fill: rgb(255,0,0); font-weight: bolder;">
+      Sandeep
+    </tspan>
+    <animateTransform attributeName="transform" type="translate" values="0,0;600,0;-400,0;0,0" keyTimes="0;0.33;0.66;1" dur="4s" repeatCount="indefinite"></animateTransform>
+  </text>
+</g>
+  
+  
+</svg>

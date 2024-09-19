@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Web Xfce Desktop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div id="taskbar">
+    <div class="taskbar-item taskbar-program menu"><img class="app-menu-icon" src="https://static-00.iconduck.com/assets.00/desktop-environment-xfce-icon-2048x2048-5qco7r29.png" alt="logo" /> Applications Menu &nbsp;<i class="fa fa-caret-down"></i>
+      <ul class="menu-dropdown menu-dropdown-hide">
+        <li class="main-menu-item"><i class="fa fa-file menu-item-icon"></i>Run Program...</li>
+        <li class="main-menu-item" id="terminal" data-window="terminal"><i class="fa fa-terminal menu-item-icon"></i>Terminal Emulator</li>
+        <li class="main-menu-item"><i class="fa fa-folder menu-item-icon"></i>File Manager</li>
+        <li class="main-menu-item"><i class="fa fa-envelope menu-item-icon"></i>Mail Reader</li>
+        <li class="main-menu-item"><i class="fa fa-globe menu-item-icon"></i>Web Browser</li>
+        <li class="main-menu-item"><i class="fa fa-gear menu-item-icon"></i>Settings <i class="fa fa-caret-right"></i>
+          <ul class="sub-menu">
+            <li><i class="fa fa-gears menu-item-icon"></i>System</li>
+            <li><i class="fa fa-power-off menu-item-icon"></i>Power</li>
+            <li><i class="fa fa-user menu-item-icon"></i>User</li>
+          </ul>
+        </li>
+        <li class="main-menu-item"><i class="fa fa-scissors menu-item-icon"></i>Accessories</li>
+        <li class="main-menu-item"><i class="fa fa-graduation-cap menu-item-icon"></i>Education</li>
+        <li class="main-menu-item"><i class="fa fa-gamepad menu-item-icon"></i>Games</li>
+        <li class="main-menu-item"><i class="fa fa-exclamation-circle menu-item-icon"></i>About Xfce</li>
+        <li class="main-menu-item"><i class="fa fa-sign-out menu-item-icon"></i>Log Out</li>
+      </ul>
+    </div>
+    <div class="taskbar-item taskbar-program" data-window="filemanager"><i class="fa fa-folder menu-item-icon"></i>File Manager</div>
+
+    <div class="taskbar-item right-side">Sandeep</div>
+    <div class="taskbar-item right-side"><i class="fa fa-exchange download-icon noti-icons"></i><i class="fa fa-wifi noti-icons"></i></div>
+    <div class="taskbar-item right-side time"></div>
+    <div class="taskbar-item right-side">
+      <div class="desktops selected-desktop"></div>
+      <div class="desktops"></div>
+      <div class="desktops"></div>
+      <div class="desktops"></div>
+    </div>
+  </div>
+
+<div class="desktop">  
+  <div class="main-desktop"></div>
+  <div class="open-window" data-window="filemanager">
+    <div class="titlebar">
+      <i class="fa fa-close titlebar-icons"></i>
+      <i class="fa fa-window-maximize titlebar-icons"></i>
+      <i class="fa fa-window-minimize titlebar-icons"></i>
+      <i class="fa fa-arrow-up titlebar-icons"></i>
+      <span class="window-title">Sandeep - File Manager</span>
+      <span class="fa fa-folder window-icon"></span>
+    </div>
+    <iframe src="./fm1/" style=" flex: 1; width: 100%; "></iframe>
+  </div>
+  <div class="desktop-icon-holder">
+    <div class="desktop-icon" data-window="recyclebin" ondblclick="openIcon(this)">
+      <i class="fa fa-trash fa-2x"></i>
+      <div class="icon-label">Recycle Bin</div>
+    </div>
+    <div class="desktop-icon" data-window="filemanager" ondblclick="openIcon(this)">
+      <i class="fa fa-folder fa-2x"></i>
+      <div class="icon-label">File Manager</div>
+    </div>
+  </div>
+</div>
+
+  
+  <div class="application-dock">
+    <i class="dock-item fa fa-folder dock-item-icon"></i>
+    <div class="dock-seperator"></div>
+    <i class="dock-item fa fa-globe dock-item-icon"></i>
+    <i class="dock-item fa fa-terminal dock-item-icon"  data-window="terminal" ondblclick="openIcon(this)"></i>
+    <i class="dock-item fa fa-search dock-item-icon"></i>
+    <div class="dock-seperator"></div>
+    <i class="dock-item fa fa-sign-out dock-item-icon"></i>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://use.fontawesome.com/cbd153a72f.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

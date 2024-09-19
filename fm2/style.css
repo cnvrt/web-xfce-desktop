@@ -1,0 +1,206 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+html, body {
+  width: 100%;
+}
+
+body {
+  background: #333;
+  font-family: sans-serif;
+}
+
+button {
+  background: black;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+button:hover, button:disabled {
+  background: #444;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+.window {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 20px;
+  background: silver;
+  padding: 2px;
+}
+
+.path input {
+  padding: 3px;
+  width: 100%;
+  padding-right: 60px;
+}
+.path button {
+  background: transparent;
+  outline: none;
+  color: green;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 24px;
+  transition: 0.2s;
+}
+.path button:hover {
+  background: green;
+  color: white;
+}
+
+.controls {
+  padding: 2px 0;
+  text-align: center;
+  user-select: none;
+}
+.controls button {
+  font-size: 20px;
+  background: transparent;
+  color: black;
+  box-sizing: border-box;
+  margin: 1px;
+  outline: none;
+}
+.controls button:hover:not(:disabled) {
+  border: 1px solid black;
+  margin: 0;
+}
+.controls button:disabled {
+  color: gray;
+}
+.controls ion-icon {
+  position: relative;
+  top: 2px;
+  transition: 0.2s;
+}
+
+.explorer {
+  flex: 1;
+  background: #eee;
+  padding: 10px;
+  height: 200px;
+  overflow: auto;
+  font-size: 13px;
+}
+
+.file {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  float: left;
+  transition: 0.2s background;
+}
+.file .name {
+  max-width: 100%;
+  /*position: absolute;*/
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  max-height: 2.3em;
+}
+.file:hover {
+  background-color: #ddd;
+}
+
+.ico {
+  flex: 1;
+  margin-bottom: 5px;
+}
+.ico-dir {
+  content: url('../fm1/folder.svg');
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.ico-file {
+  content: url(../fm1/file-regular.svg);
+  display: inline-block;
+  align-self: center;
+  width: 75%;
+}
+
+.file.selected {
+  background: silver;
+}
+.file.selected .name {
+  background: silver;
+  overflow: unset;
+  text-overflow: ellipsis;
+  z-index: 10;
+}
+
+.file.draggable {
+  z-index: 1000;
+  opacity: 0.7;
+}
+
+.contextmenu {
+  display: none;
+  background: silver;
+  border: 1px solid black;
+  width: 100px;
+  position: absolute;
+  z-index: 9000;
+  overflow: hidden;
+  transition: 0.2s;
+}
+.contextmenu-dir {
+  width: 120px;
+}
+.contextmenu ul {
+  list-style: none;
+}
+.contextmenu button {
+  width: 100%;
+  text-align: left;
+}
+.contextmenu button ion-icon {
+  margin-right: 0.3em;
+}
+.contextmenu button:disabled {
+  display: none;
+}
+
+.file-icon{
+  content: url(../fm1/file-regular.svg);
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.file-php{
+  content: url(http://kodcloud.a/static/images/file_icon/icon_file/php.png);
+  width: 100%;
+}
+
+.file-css{
+  content: url(../fm1/file_css_icon.svg);
+  width: 88.6%;
+}
+.file-js{
+  content: url(../fm1/file_js_icon.svg);
+  width: 88.6%;
+}
+.file-html{
+  content: url(../fm1/file_html_icon.svg);
+  width: 88.6%;
+}
